@@ -7,18 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="resetarcampos()">
     <h2 align="center">Buscador de endereço</h2>
     <center>
     <pre>
-    CEP<br> <input type="text" name="" id="" placeholder="Digite o CEP aqui"> <br><br>
-    Endereço<br> <input type="text" name="" id="" disabled><br><br>
-    Bairro<br> <input type="text" name="" id="" disabled><br><br>
-    Cidade<br> <input type="text" name="" id="" disabled><br><br>
-    Estado<br> <input type="text" name="" id="" disabled><br><br>
-    
+        <form>
+            CEP<br> <input type="text" id="campocep" placeholder="Digite o CEP aqui"> <br><br>
+            Endereço<br> <input type="text"  id="campoendereco" disabled><br><br>
+            Bairro<br> <input type="text"  id="campobairro" disabled><br><br>
+            Cidade<br> <input type="text"  id="campocidade" disabled><br><br>
+            Estado<br> <input type="text" id="campoestado" disabled><br><br>
+            <div class="btn">
+            <button onclick="enviarDados()">Enviar</button>
+            <button onclick="resetarcampos()">Apagar</button>
+            </div>
+        </form>
     </pre>
     </center>
     
+    <script src="buscarcep.js"></script>
 </body>
 </html>

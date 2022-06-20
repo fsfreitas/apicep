@@ -2,3 +2,10 @@ input{
     width: 30%;
     height: 2em;
 }
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 30%;
+}
