@@ -29,11 +29,25 @@ varcep.addEventListener("blur", (evento)=>{
      .catch(evento =>console.log('Algo deu errado: '+evento, message))
 });
  
+//função para enviar os dados
+function enviarDados(){     
+      
+    let let_cep         = document.getElementById('campocep').value;
+    let let_endereco    = document.getElementById('campoendereco').value;
+    let let_bairro      = document.getElementById('campobairro').value;
+    let let_cidade      = document.getElementById('campocidade').value;
+    let let_estado      = document.getElementById('campoestado').value;
 
-
-
-
-
+      let objetoJSON = {
+         
+          'endereco': let_endereco,
+          'cep': let_cep,
+          'bairro': let_bairro,
+          'cidade': let_cidade,
+          'estado': let_estado
+      }
+      console.log(objetoJSON);   
+}
 
 //função sempre chamada no carregamento da página e no botão APAGAR
 function resetarcampos(){
